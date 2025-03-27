@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video id="videoPlayer" controls>
+                <source src="vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="chapters-container">
+                <h2>Chapters</h2>
+                <div class="chapters-list">
+                    <button class="chapter-btn" data-time="0">Introduction</button>
+                    <button class="chapter-btn" data-time="4">Training Videos</button>
+                    <button class="chapter-btn" data-time="33">Interview Videos</button>
+                    <button class="chapter-btn" data-time="44">Event Videos</button>
+                    <button class="chapter-btn" data-time="93">Documentary Videos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="cmi5.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
